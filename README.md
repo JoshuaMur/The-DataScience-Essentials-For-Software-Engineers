@@ -31,13 +31,13 @@ Consider a dataset $\( D = \{x_i, y_i\}_{i=1}^N \)$, where $\( x_i \)$ represent
 
 For an input $\( x_i \)$, the augmented data $\( x_i' \)$ is obtained as:
 
-\[ x_i' = T(x_i) \]
+$\[ x_i' = T(x_i) \]$
 
-The transformation \( T \) can be a combination of multiple functions, such as rotation \( R \), scaling \( S \), and noise addition \( N \):
+The transformation $\( T \)$ can be a combination of multiple functions, such as rotation $\( R \)$, scaling $\( S \)$, and noise addition $\( N \)$:
 
-\[ T(x_i) = N(S(R(x_i))) \]
+$\[ T(x_i) = N(S(R(x_i))) \]$
 
-In the context of image data, if \( R \) represents a rotation by an angle \( \theta \), \( S \) a scaling by a factor \( \alpha \), and \( N \) the addition of Gaussian noise with mean \( \mu \) and standard deviation \( \sigma \), the transformations can be defined as:
+In the context of image data, if $\( R \)$ represents a rotation by an angle $\( \theta \)$, $\( S \)$ a scaling by a factor $\( \alpha \)$, and $\( N \)$ the addition of Gaussian noise with mean $\( \mu \)$ and standard deviation $\( \sigma \)$, the transformations can be defined as:
 
 - **Rotation:** $\[ R(x) = x \cdot \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix} \]$
 - **Scaling:** $\[ S(x) = \alpha \cdot x \]$
