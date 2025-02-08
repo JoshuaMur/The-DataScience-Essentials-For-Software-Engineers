@@ -27,9 +27,9 @@ Data augmentation is a technique used to artificially expand the size and divers
 
 **Mathematical Representation of Data Augmentation:**
 
-Consider a dataset \( D = \{x_i, y_i\}_{i=1}^N \), where \( x_i \) represents the input data and \( y_i \) the corresponding labels. Data augmentation involves applying a transformation function \( T \) to the input data to generate new samples.
+Consider a dataset $\( D = \{x_i, y_i\}_{i=1}^N \)$, where $\( x_i \)$ represents the input data and $\( y_i \)$ the corresponding labels. Data augmentation involves applying a transformation function $\( T \)$ to the input data to generate new samples.
 
-For an input \( x_i \), the augmented data \( x_i' \) is obtained as:
+For an input $\( x_i \)$, the augmented data $\( x_i' \)$ is obtained as:
 
 \[ x_i' = T(x_i) \]
 
@@ -39,8 +39,8 @@ The transformation \( T \) can be a combination of multiple functions, such as r
 
 In the context of image data, if \( R \) represents a rotation by an angle \( \theta \), \( S \) a scaling by a factor \( \alpha \), and \( N \) the addition of Gaussian noise with mean \( \mu \) and standard deviation \( \sigma \), the transformations can be defined as:
 
-- **Rotation:** \[ R(x) = x \cdot \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix} \]
-- **Scaling:** \[ S(x) = \alpha \cdot x \]
-- **Noise Addition:** \[ N(x) = x + \mathcal{N}(\mu, \sigma^2) \]
+- **Rotation:** $\[ R(x) = x \cdot \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix} \]$
+- **Scaling:** $\[ S(x) = \alpha \cdot x \]$
+- **Noise Addition:** $\[ N(x) = x + \mathcal{N}(\mu, \sigma^2) \]$
 
 By applying these transformations, the dataset is enriched with new samples, enhancing the model's training process and its ability to generalize to unseen data. 
